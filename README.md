@@ -101,7 +101,8 @@ O projeto foi desenvolvido para funcionar corretamente em:
 
 ## 📸 Preview
 
-img/preview.png
+<img width="1763" height="4572" alt="preview" src="https://github.com/user-attachments/assets/1932bba8-2731-4965-a0f3-bfcb04b50b5b" />
+
 
 ```
 
