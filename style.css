@@ -1,0 +1,1041 @@
+/* ===================================================
+   PORTFÓLIO - LEONARDO CASTRO
+   Tema: Cyber Tech
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap');
+
+:root{
+
+    --background:#050505;
+    --background-secondary:#0F172A;
+    --card:#161B22;
+
+    --primary:#06FFA9;
+    --secondary:#22CCD3;
+    --accent:#53E6FF;
+
+    --text:#F8FAFC;
+    --text-secondary:#94A3B8;
+
+    --border:#1F2937;
+
+    --radius:18px;
+
+    --shadow:
+    0 0 25px rgba(6,255,169,.15);
+
+}
+
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(6,255,169,.08),
+    transparent 40%),
+    var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ========================= */
+
+header{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:flex-start;
+    align-items:center;
+
+    gap:90px;
+
+    padding:70px 10%;
+
+}
+
+.logo{
+
+    max-width:550px;
+
+}
+
+.logo img{
+
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid var(--primary);
+
+    box-shadow:
+
+    0 0 30px rgba(6,255,169,.4),
+    0 0 60px rgba(34,204,211,.2);
+
+    margin-bottom:30px;
+
+}
+
+.logo h1{
+
+    font-family:"Orbitron";
+
+    font-size:3.2rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.logo p{
+
+    color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-top: 5px;
+
+}
+
+/* ========================= */
+
+nav{
+
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(22, 27, 34, 0.8);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(34, 204, 211, 0.15);
+
+    border-radius: 50px;
+
+    padding: 15px 35px;
+
+    box-shadow: var(--shadow);
+
+    z-index: 1000;
+
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+}
+
+/* ========================= */
+
+main{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+/* ========================= */
+
+section{
+
+    margin-bottom:120px;
+
+}
+
+/* ========================= */
+
+#iconecv{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.iconecv-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.iconecv-content img{
+
+    width:45px;
+
+    filter:drop-shadow(0 0 10px var(--secondary));
+
+}
+
+/* ========================= */
+
+.btn{
+
+    padding:16px 38px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+
+    90deg,
+
+    var(--primary),
+
+    var(--secondary)
+
+    );
+
+    color:#000;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 0 25px rgba(6,255,169,.45);
+
+}
+/* ===================================================
+   SOBRE
+=================================================== */
+
+#sobre{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sobre-content{
+    width:100%;
+    background:rgba(22,27,34,.75);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(34,204,211,.15);
+    border-radius:var(--radius);
+    padding:50px;
+    transition:.4s;
+    box-shadow:var(--shadow);
+}
+
+.sobre-content:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.sobre-content h2{
+    font-family:"Orbitron",sans-serif;
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.sobre-content h2::after{
+    content:"";
+    width:80px;
+    height:3px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+    position:absolute;
+    bottom:-10px;
+    left:0;
+}
+
+.sobre-content p{
+    color:var(--text-secondary);
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+/* ===================================================
+   SKILLS
+=================================================== */
+
+.skills-content{
+    background:rgba(22,27,34,.75);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(34,204,211,.15);
+    border-radius:var(--radius);
+    padding:50px;
+    box-shadow:var(--shadow);
+}
+
+.skills-content h2{
+    font-family:"Orbitron";
+    color:var(--secondary);
+    margin-bottom:35px;
+    font-size:2rem;
+}
+
+.skills-content ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:25px;
+}
+
+.skills-content li{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:70px;
+
+    background:#111827;
+
+    border:1px solid rgba(34,204,211,.15);
+
+    border-radius:15px;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.skills-content li:hover{
+
+    background:linear-gradient(
+        135deg,
+        rgba(6,255,169,.15),
+        rgba(34,204,211,.18)
+    );
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+    transform:
+        translateY(-6px)
+        scale(1.04);
+
+    box-shadow:
+        0 0 18px rgba(6,255,169,.25);
+}
+
+/* Barra superior neon */
+
+.skills-content li::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:3px;
+
+    top:0;
+    left:0;
+
+    background:var(--primary);
+
+    transition:.4s;
+
+}
+
+.skills-content li{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skills-content li:hover::before{
+
+    width:100%;
+
+}
+
+/* Efeito pulsante */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:
+        0 0 5px rgba(6,255,169,.1);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 18px rgba(6,255,169,.35);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 5px rgba(6,255,169,.1);
+
+    }
+
+}
+
+.skills-content li:hover{
+
+    animation:glow 1.8s infinite;
+
+}
+/* ===================================================
+   PROJETOS
+=================================================== */
+
+#projetos h2{
+
+    font-family:"Orbitron",sans-serif;
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+    text-align:center;
+
+}
+
+.projetos-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:40px;
+
+}
+
+.projeto{
+
+    background:rgba(22,27,34,.75);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(34,204,211,.18);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.projeto:hover{
+
+    transform:
+    translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:
+
+    0 0 30px rgba(6,255,169,.25);
+
+}
+
+/* ======================= */
+
+.projeto img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.projeto:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ======================= */
+
+.projeto h3{
+
+    color:var(--secondary);
+
+    font-family:"Orbitron";
+
+    padding:25px 25px 10px;
+
+}
+
+.projeto p{
+
+    padding:0 25px 25px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/* Linha neon */
+
+.projeto::before{
+
+    content:"";
+
+    display:block;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent));
+
+}
+
+/* Botões */
+
+.botoes-projeto{
+
+    display:flex;
+
+    gap:15px;
+
+    padding:0 25px 30px;
+
+}
+
+.botoes-projeto a{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    color:white;
+
+    transition:.35s;
+
+    border:1px solid rgba(34,204,211,.25);
+
+}
+
+.botoes-projeto a:first-child{
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary));
+
+    color:#000;
+
+    font-weight:bold;
+
+}
+
+.botoes-projeto a:last-child{
+
+    background:#111827;
+
+}
+
+.botoes-projeto a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 18px rgba(6,255,169,.35);
+
+}
+/* ===================================================
+   CONTATO
+=================================================== */
+
+#contato h2{
+    text-align:center;
+    font-family:"Orbitron",sans-serif;
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.contato-content>p{
+    text-align:center;
+    color:var(--text-secondary);
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Redes Sociais
+=========================== */
+
+.redes{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+
+    margin:50px 0;
+
+}
+
+.redes a{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:15px 25px;
+
+    background:rgba(22,27,34,.75);
+
+    border:1px solid rgba(34,204,211,.15);
+
+    border-radius:15px;
+
+    color:var(--text);
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.redes img{
+
+    width:28px;
+    height:28px;
+
+}
+
+.redes a:hover{
+
+    background:linear-gradient(
+    90deg,
+    rgba(6,255,169,.12),
+    rgba(34,204,211,.15));
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 20px rgba(6,255,169,.25);
+
+}
+
+/* ===========================
+   Formulário
+=========================== */
+
+.form-container{
+
+    max-width:750px;
+
+    margin:60px auto 0;
+
+    background:rgba(22,27,34,.75);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(34,204,211,.18);
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.form-container h3{
+
+    text-align:center;
+
+    font-family:"Orbitron";
+
+    color:var(--secondary);
+
+    margin-bottom:35px;
+
+}
+
+.fs-field{
+
+    margin-bottom:22px;
+
+}
+
+.fs-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+.fs-input,
+.fs-textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#0B1220;
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+.fs-textarea{
+
+    resize:none;
+
+    min-height:180px;
+
+}
+
+.fs-input:focus,
+.fs-textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:
+    0 0 18px rgba(6,255,169,.25);
+
+}
+
+.fs-button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary));
+
+    color:#000;
+
+    transition:.35s;
+
+}
+
+.fs-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 22px rgba(6,255,169,.45);
+
+}
+
+/* ===================================================
+   FOOTER
+=================================================== */
+
+footer{
+
+    margin-top:80px;
+
+    border-top:1px solid rgba(34,204,211,.12);
+
+    padding:35px;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    background:#030303;
+
+}
+
+/* ===================================================
+   SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0A0A0A;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+    var(--primary),
+    var(--secondary));
+
+    border-radius:20px;
+
+}
+
+/* ===================================================
+   SELECTION
+=================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+
+/* ===================================================
+   RESPONSIVO
+=================================================== */
+
+@media(max-width:992px){
+
+header{
+
+    flex-direction:column;
+    text-align:center;
+
+    gap:60px;
+
+    min-height:auto;
+
+    padding-top:100px;
+
+}
+
+nav{
+
+    position:fixed;
+
+    bottom:25px;
+    left:50%;
+
+    top:auto;
+    right:auto;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    border-radius:50px;
+
+}
+
+nav ul{
+
+    flex-direction:row;
+
+    justify-content:space-around;
+
+    gap:10px;
+
+}
+
+.logo img{
+
+    width:180px;
+    height:180px;
+
+}
+
+.logo h1{
+
+    font-size:2.4rem;
+
+}
+
+.projetos-content{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+    margin-bottom:80px;
+
+}
+
+.sobre-content,
+.skills-content,
+.form-container{
+
+    padding:30px;
+
+}
+
+.skills-content ul{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.redes{
+
+    flex-direction:column;
+
+}
+
+.redes a{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.logo h1{
+
+    font-size:2rem;
+
+}
+
+.logo p{
+
+    font-size:.95rem;
+
+}
+
+.skills-content ul{
+
+    grid-template-columns:1fr;
+
+}
+
+.projeto img{
+
+    height:200px;
+
+}
+
+nav a{
+
+    font-size:.85rem;
+
+}
+
+}
